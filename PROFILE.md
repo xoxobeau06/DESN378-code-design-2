@@ -23,7 +23,7 @@ Update it once, keep it consistent everywhere.
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
 | **GitHub** | `https://github.com/xoxobeau06` | ✅ |
-| **Figma** | `@sydney.lincoln` | ⏳ |
+| **Figma** | `@sydney.lincoln` | ✅ |
 | **CodePen** | `https://codepen.io/Sydney-Lincoln` |  ✅|
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
@@ -31,9 +31,9 @@ Update it once, keep it consistent everywhere.
 
 ## Profile Photo
 
-- [x ] Same photo uploaded to GitHub, Figma, and CodePen
-- [x ] Professional or at least *intentional*
-- [ x] Face visible (helps me learn names!)
+- [x] Same photo uploaded to GitHub, Figma, and CodePen
+- [x] Professional or at least *intentional*
+- [x] Face visible (helps me learn names!)
 
 ---
 
@@ -63,12 +63,10 @@ Update it once, keep it consistent everywhere.
 
 ## About Me
 
-*Optional: A sentence or two about your design interests. This could seed your eventual portfolio bio.*
 
-<!-- 
-Example: "I'm drawn to motion design and systems thinking. 
-Currently exploring how interaction design can feel more human."
--->
+Hi! Most things surrounding code really scare me, so I like to try and create things that feel soft and comforting. My designs are very feminine, cozy, and organized. I am really just trying to survive this year of college
+
+
 
 ---
 
