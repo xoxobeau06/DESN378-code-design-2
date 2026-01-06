@@ -34,7 +34,7 @@ Update this section each week with observations, breakthroughs, and questions.
 
 ## Quick Links
 
-- [My Profile] (https://github.com/xoxobeau06/DESN378-code-design-2/blob/main/PROFILE.md)
+- My Profile (https://github.com/xoxobeau06/DESN378-code-design-2/blob/main/PROFILE.md)
 - [Labs](labs/)
 
 ---
