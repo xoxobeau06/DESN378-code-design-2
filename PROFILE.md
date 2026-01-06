@@ -64,7 +64,7 @@ Update it once, keep it consistent everywhere.
 ## About Me
 
 
-Hi! Most things surrounding code really scare me, so I like to try and create things that feel soft and comforting. My designs are very feminine, cozy, and organized. I am really just trying to survive this year of college
+Hi! Most things surrounding code really scare me, so I like to try and create things that feel soft and comforting. My designs are very feminine, cozy, and organized. I am really just trying to survive this year of college!
 
 
 
