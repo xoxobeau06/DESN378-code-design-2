@@ -9,10 +9,10 @@ Update it once, keep it consistent everywhere.
 
 | Field | Value |
 |-------|-------|
-| **Name** | <!-- First Last --> |
-| **Preferred Name** | <!-- What should I call you? --> |
-| **Pronouns** | <!-- Optional --> |
-| **EWU Email** | <!-- @ewu.edu --> |
+| **Name** | Sydney Lincoln |
+| **Preferred Name** | Sydney or Syd |
+| **Pronouns** | she/her/hers |
+| **EWU Email** | slincoln4@ewu.edu |
 
 ---
 
@@ -22,18 +22,18 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/________` | ⏳ |
-| **Figma** | `@________` | ⏳ |
-| **CodePen** | `https://codepen.io/________` | ⏳ |
+| **GitHub** | `https://github.com/xoxobeau06` | ✅ |
+| **Figma** | `@sydney.lincoln` | ⏳ |
+| **CodePen** | `https://codepen.io/Sydney-Lincoln` |  ✅|
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
 ---
 
 ## Profile Photo
 
-- [ ] Same photo uploaded to GitHub, Figma, and CodePen
-- [ ] Professional or at least *intentional*
-- [ ] Face visible (helps me learn names!)
+- [x ] Same photo uploaded to GitHub, Figma, and CodePen
+- [x ] Professional or at least *intentional*
+- [ x] Face visible (helps me learn names!)
 
 ---
 
@@ -41,9 +41,9 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Applied/Renewed | ⏳ |
-| Copilot Access | ⏳ |
-| Expires | <!-- Date --> |
+| Applied/Renewed | ✅ |
+| Copilot Access | ✅ |
+| Expires | I have it |
 
 👉 [Check status or renew](https://education.github.com/pack)
 
@@ -53,9 +53,9 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Education Plan Active | ⏳ |
-| Joined Course Team | ⏳ |
-| Expires | <!-- Date --> |
+| Education Plan Active | ✅ |
+| Joined Course Team | ✅ |
+| Expires | I have it  |
 
 👉 [Check status](https://www.figma.com/settings) → Plan
 
