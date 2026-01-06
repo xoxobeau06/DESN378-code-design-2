@@ -1,8 +1,8 @@
 # DESN 378: Code + Design 2
 
 🔗 **[Learning Log](https://github.com/xoxobeau06/DESN378-code-design-2)**
-🔗 **[DESN368 Portfolio](https://xoxobeau06.github.io/DESN368-code-design-workspace-SL/)** _FYI, this is just the URL to your repo; if it's still on Netlify, then use that. _
 
+🔗 **[DESN368 Portfolio](https://xoxobeau06.github.io/DESN368-code-design-workspace-SL/)** 
 ---
 
 ## About This Repository
