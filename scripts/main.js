@@ -8,7 +8,7 @@
 
 console.log('Portfolio loaded');
 // Week 0: Hello World!
-alert("Hello World, I am JavaScript");
+alert("Hello World, I am JavaScript, nice to meet you!");
 
 // Week 1: You'll add theme toggle code here
 // Week 2: You'll add localStorage persistence here
