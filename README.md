@@ -34,18 +34,18 @@ Nothing has super clicked for me just yet, everything in javascript is new to me
 ​
 ​
 ### What Was Hard
-<!-- What frustrated you? What didn't make sense?
-The new terminology in Java, and adding another location for my code information. Nothing really makes sense just yet. I am going through the motions but nothing is sticking-->
+ What frustrated you? What didn't make sense?
+The new terminology in Java, and adding another location for my code information. Nothing really makes sense just yet. I am going through the motions but nothing is sticking
 ​
 ​
 ### How I Used AI
-<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help?
-I used both, Copilot to be my small error fix, like spell check for code. Why a link wasn't working and i missed a dash or something like that. I used Chat to help make a better structured plan for each assignment and to help make some base Html and Css code so my brain could focus on learning the new language (Java)-->
+Did you use Copilot, ChatGPT, etc.? How did it help or not help?
+I used both, Copilot to be my small error fix, like spell check for code. Why a link wasn't working and i missed a dash or something like that. I used Chat to help make a better structured plan for each assignment and to help make some base Html and Css code so my brain could focus on learning the new language (Java)
 ​
 ​
 ### What's Still Unclear
-<!-- What questions do you still have? What needs more practice? 
-A little bit of everything, i need more time in class with SLOW tutorials. Guieded repetition is how i learn-->
+ What questions do you still have? What needs more practice? 
+A little bit of everything, i need more time in class with SLOW tutorials. Guieded repetition is how i learn
 ​
 ​
 ### Work Completed (Week 0)
