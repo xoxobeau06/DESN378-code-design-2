@@ -11,67 +11,52 @@ console.log('Portfolio loaded');
 // Week 0: Hello World!
 // alert("Hello World, I am JavaScript, nice to meet you!");
 
-// Image Changer code
-/*
-  Image Changer Explanation:
-  This code finds the image on the page and waits for a click.
-  When the image is clicked, it checks which picture is showing
-  and switches it to the other fox image.
-*/
-const myImage = document.querySelector("img");
+const username = 'xoxobeau06';
+const repo = 'DESN378-code-design-2';
 
-myImage.addEventListener("click", () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/fox1.png") {
-    myImage.setAttribute("src", "images/fox2.png");
-  } else {
-    myImage.setAttribute("src", "images/fox1.png");
-  }
-});
+fetch('https://api.github.com/repos/' + username + '/' + repo + '/git/trees/main?recursive=1')
+  .then(res => res.json())
+  .then(data => {
+    const nav = document.querySelector('nav');
+    
+    const indexFiles = data.tree
+      .filter(item => item.path.endsWith('/index.html'))
+      .map(item => item.path.replace('/index.html', ''));
 
+    const weeks = {};
+    indexFiles.forEach(path => {
+      const parts = path.split('/');
+      if (parts.length === 2) {
+        const week = parts[0];
+        const project = parts[1];
+        if (!weeks[week]) weeks[week] = [];
+        weeks[week].push(project);
+      }
+    });
 
-// Personalized welcome message code
-/*
-  Welcome Message Explanation:
-  This code asks the user for their name and saves it in localStorage,
-  which is like a little memory box in the browser.
-  When the page reloads, it checks if a name already exists
-  and uses it instead of asking again.
-*/
+    const ul = document.createElement('ul');
+    nav.appendChild(ul);
 
-let myButton = document.querySelector('button.change-user');
-let myHeading = document.querySelector('h1');
+    Object.keys(weeks).sort().forEach(week => {
+      const li = document.createElement('li');
+      li.textContent = week;
+      ul.appendChild(li);
 
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Welcome, ' + myName;
-  }
-}
+      const subUl = document.createElement('ul');
+      li.appendChild(subUl);
 
-if (!localStorage.getItem("name")) {
-  setUserName();
-} else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Welcome back, ${storedName} `;
-}
+      weeks[week].forEach(project => {
+        const subLi = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = week + '/' + project + '/';
+        link.textContent = project;
+        subLi.appendChild(link);
+        subUl.appendChild(subLi);
+      });
+    });
+  });
 
-myButton.addEventListener("click", () => {
-  setUserName();
-});
-/*
-  SUMMARY:
-  This file does two things:
-  1. It switches between two fox images when the image is clicked.
-  2. It asks the user for their name and remembers it using localStorage.
-
-  The key pattern I learned: find → listen → respond.
-  AI useage: Copoilot helped me fix the smaller typeing errors. ChatGPT helped me understand the tutorial and give me some prettier CSS styles for the page.
-*/
-
+  
 // Week 1: You'll add theme toggle code here
 // Week 2: You'll add localStorage persistence here
 // Week 3+: More to come...
