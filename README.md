@@ -23,6 +23,48 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 ## Learning Log
 
 Update this section each week with observations, breakthroughs, and questions.
+### Week 0: The Setup
+# Learning Log
+​
+## Week 0
+​
+### What I Learned
+What concepts clicked for you? What was new?;
+Nothing has super clicked for me just yet, everything in javascript is new to me.
+​
+​
+### What Was Hard
+ What frustrated you? What didn't make sense?
+The new terminology in Java, and adding another location for my code information. Nothing really makes sense just yet. I am going through the motions but nothing is sticking
+​
+​
+### How I Used AI
+Did you use Copilot, ChatGPT, etc.? How did it help or not help?
+I used both, Copilot to be my small error fix, like spell check for code. Why a link wasn't working and i missed a dash or something like that. I used Chat to help make a better structured plan for each assignment and to help make some base Html and Css code so my brain could focus on learning the new language (Java)
+​
+​
+### What's Still Unclear
+ What questions do you still have? What needs more practice? 
+A little bit of everything, i need more time in class with SLOW tutorials. Guieded repetition is how i learn
+​
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [X] Portfolio Audit
+​
+**Learn**
+- [X] Console Explorer
+- [X] Codedex Console Fundamentals
+​
+**Reflect**
+- [X] Visual Notes: Variables and Strings
+​
+**Build**
+- [X] The Setup
+- [X] The Behavioral Layer
+​
+---
 
 ### Week 1: Systems That Respond
 *Coming soon...*
