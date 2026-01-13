@@ -29,8 +29,8 @@ Update this section each week with observations, breakthroughs, and questions.
 ## Week 0
 ​
 ### What I Learned
-<!-- What concepts clicked for you? What was new?;
-Nothing has super clicked for me just yet, everything in javascript is new to me.-->
+What concepts clicked for you? What was new?;
+Nothing has super clicked for me just yet, everything in javascript is new to me.
 ​
 ​
 ### What Was Hard
