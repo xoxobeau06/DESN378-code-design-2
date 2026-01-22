@@ -67,7 +67,40 @@ A little bit of everything, i need more time in class with SLOW tutorials. Guied
 ---
 
 ### Week 1: Systems That Respond
-*Coming soon...*
+​
+## Week 1
+
+### What I Learned
+The reasoning behind design systems made more sense to me this week, especially the organizational side of them. Seeing design systems as a way to keep things consistent and structured across a project helped the concept feel more understandable.
+
+### What Was Hard
+Using JavaScript selectors for the story teller assignment was difficult. I found it hard to know how to start and how to get from the beginning to a finished, working version without a lot of guidance.
+
+### How I Used AI
+I used AI mainly to break things down into smaller steps and to explain JavaScript code when I got stuck. It helped me move forward in the assignment, even though I don’t remember all of the details yet.
+
+### What's Still Unclear
+JavaScript selectors and JavaScript in general are still pretty unclear to me. I’m feeling a bit overwhelmed and know I need more practice to feel confident starting and explaining my code on my own.
+
+
+### Work Completed (Week 1)
+
+**Engage**
+- [X] VS Code Theme Setup
+
+**Learn**
+- [X] Codedex.io Variables
+- [X] HTML Academy 
+
+**Practice**
+- [X] The Story Teller
+
+**Build**
+- [X] Portfolio Migration
+- [X] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [X] Visual Notes: Week 1---
 
 ### Week 2: Remembering Choices
 *Coming soon...*
