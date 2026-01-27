@@ -1,0 +1,53 @@
+:root {
+    /* =========================
+       Primitive Colors — Light
+       ========================= */
+    --neutral-100: #FFF7F5;
+    --neutral-200: #FDF8F2;
+    --neutral-300: #FFE6E6;
+    --neutral-500: #D6B08A;
+    --neutral-600: #D9A6A1;
+    --neutral-800: #8C6956;
+
+    /* =========================
+       Primitive Colors — Dark (existing)
+       ========================= */
+    --neutral2-100: #FFF7F5; /* light text */
+    --neutral2-200: #E8C9C9; /* dusty pink */
+    --neutral2-300: #D6B08A; /* tan */
+    --neutral2-500: #C7928D; /* deeper pink */
+    --neutral2-600: #7A6458; /* milk chocolate */
+    --neutral2-700: #6B554A; /* NEW: lighter brown */
+    --neutral2-800: #5E463A; /* dark chocolate */
+
+    /* =========================
+       Semantic Colors — Light
+       ========================= */
+    --accent-primary: var(--neutral-600);
+    --accent-secondary: var(--neutral-500);
+    --main-theme: var(--neutral-300);
+    --surface-card: var(--neutral-200);
+    --surface-page: var(--neutral-100);
+    --text-primary: var(--neutral-800);
+}
+body.light {
+  /* light is the default via :root, this is here to satisfy the lab requirement */
+}
+/* =========================
+   Semantic Colors — Dark
+   ========================= */
+body.dark {
+    /* Page background = milk chocolate */
+    --surface-page: var(--neutral2-600);
+
+    /* Card surfaces = softer contrast */
+    --surface-card: var(--neutral2-700);  /* lighter brown */
+    --main-theme: var(--neutral2-200);    /* dusty pink (controlled) */
+
+    /* Text */
+    --text-primary: var(--neutral2-100);
+
+    /* Accents stay brand-consistent */
+    --accent-primary: var(--neutral2-500);
+    --accent-secondary: var(--neutral2-300);
+}
