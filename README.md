@@ -103,7 +103,48 @@ JavaScript selectors and JavaScript in general are still pretty unclear to me. I
 - [X] Visual Notes: Week 1---
 
 ### Week 2: Remembering Choices
-*Coming soon...*
+# Learning Log
+​
+## Week 2
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+The application of figma variables was new, i am used to styles and components in figma so i don't really understand why we need another method in figma for them. 
+​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+The different names and sections for figma varibles, i feel like i could make a system that is much easier to understand. 
+​
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+I used chatGPT to better explain the assignments this week because the information was not working for my brain 
+​
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+Still everything in regards to applying javascript, im still just going through the motions and am unsure on what im actually doing.
+​
+​
+### Work Completed (Week 2)
+
+**Engage**
+- [X] VS Code Theme Setup
+
+**Learn**
+- [X] Codedex.io Conditionals
+- [X] figma variables
+
+**Practice**
+- [X] The Switch
+
+**Build**
+- [X] The Foundation
+- [X] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [X] Visual Notes: Week 2---
 
 ---
 
