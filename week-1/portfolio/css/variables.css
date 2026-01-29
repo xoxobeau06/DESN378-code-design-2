@@ -32,16 +32,16 @@
     --surface-card: var(--neutral-200);
     --surface-page: var(--neutral-100);
     --text-primary: var(--neutral-800);
-}
 
-body.light {
-    /* light is the default via :root */
+    /* Needed because styles.css references it */
+    --text-inverse: var(--neutral-800);
 }
 
 /* =========================
    Semantic Colors — Dark
+   (JS sets: document.documentElement.dataset.theme = "dark")
    ========================= */
-body.dark {
+html[data-theme="dark"] {
     /* Page background */
     --surface-page: var(--neutral2-600);
 
@@ -51,6 +51,7 @@ body.dark {
 
     /* Text */
     --text-primary: var(--neutral2-150);
+    --text-inverse: var(--neutral2-150);
 
     /* Accents & borders */
     --accent-primary: var(--neutral2-300);
