@@ -2,23 +2,26 @@
     /* =========================
        Primitive Colors — Light
        ========================= */
-    --neutral-100: #FFF7F5;
-    --neutral-200: #FDF8F2;
-    --neutral-300: #FFE6E6;
-    --neutral-500: #D6B08A;
-    --neutral-600: #D9A6A1;
-    --neutral-800: #8C6956;
+    --neutral-100: #FFF7F5; /* porcelain cream */
+    --neutral-200: #FDF8F2; /* warm paper */
+    --neutral-300: #FFE6E6; /* blush */
+    --neutral-500: #B9A1A8; /* light rose-plum (accent secondary) */
+    --neutral-600: #D9A6A1; /* rose */
+    --neutral-800: #5A3E44; /* rose-plum ink (matches dark text card) */
 
     /* =========================
-       Primitive Colors — Dark (existing)
+       Primitive Colors — Dark
        ========================= */
-    --neutral2-100: #FFF7F5; /* light text */
-    --neutral2-200: #E8C9C9; /* dusty pink */
-    --neutral2-300: #D6B08A; /* tan */
-    --neutral2-500: #C7928D; /* deeper pink */
-    --neutral2-600: #7A6458; /* milk chocolate */
-    --neutral2-700: #6B554A; /* NEW: lighter brown */
-    --neutral2-800: #5E463A; /* dark chocolate */
+    --neutral2-100: #FFF7F5; /* (reserved) lightest cream */
+    --neutral2-150: #F1D6DA; /* blush-cream text & borders */
+    --neutral2-200: #E8C9C9; /* soft blush theme */
+    --neutral2-300: #D9A6A1; /* rose accent */
+    --neutral2-500: #C7928D; /* deeper rose */
+
+    /* Dark surfaces — WARMED */
+    --neutral2-600: #4A3437; /* deep purple-rose PAGE */
+    --neutral2-700: #6A4A4F; /* 🔥 warm rose-clay CARD */
+    --neutral2-800: #2A1F20; /* deep shadow / divider */
 
     /* =========================
        Semantic Colors — Light
@@ -30,24 +33,26 @@
     --surface-page: var(--neutral-100);
     --text-primary: var(--neutral-800);
 }
+
 body.light {
-  /* light is the default via :root, this is here to satisfy the lab requirement */
+    /* light is the default via :root */
 }
+
 /* =========================
    Semantic Colors — Dark
    ========================= */
 body.dark {
-    /* Page background = milk chocolate */
+    /* Page background */
     --surface-page: var(--neutral2-600);
 
-    /* Card surfaces = softer contrast */
-    --surface-card: var(--neutral2-700);  /* lighter brown */
-    --main-theme: var(--neutral2-200);    /* dusty pink (controlled) */
+    /* Cards & containers */
+    --surface-card: var(--neutral2-700);
+    --main-theme: var(--neutral2-200);
 
     /* Text */
-    --text-primary: var(--neutral2-100);
+    --text-primary: var(--neutral2-150);
 
-    /* Accents stay brand-consistent */
-    --accent-primary: var(--neutral2-500);
-    --accent-secondary: var(--neutral2-300);
+    /* Accents & borders */
+    --accent-primary: var(--neutral2-300);
+    --accent-secondary: var(--neutral2-150);
 }
