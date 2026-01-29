@@ -5,9 +5,12 @@ const THEME_KEY = 'theme';
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
 
-  const isDark = theme === 'dark';
-  toggleBtn.setAttribute('aria-pressed', String(isDark));
-  toggleBtn.textContent = isDark ? 'Light mode' : 'Dark mode';
+  // Only update button if it exists
+  if (toggleBtn) {
+    const isDark = theme === 'dark';
+    toggleBtn.setAttribute('aria-pressed', String(isDark));
+    toggleBtn.textContent = isDark ? 'Light mode' : 'Dark mode';
+  }
 }
 
 // 1️⃣ On page load: user choice → system preference → default
@@ -21,12 +24,14 @@ if (savedTheme) {
 }
 
 // 2️⃣ On toggle click: switch + save
-toggleBtn.addEventListener('click', () => {
-  const currentTheme = document.documentElement.dataset.theme;
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.dataset.theme;
 
-  // Ternary: if current theme is dark, switch to light; otherwise switch to dark
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    // Ternary: if current theme is dark, switch to light; otherwise switch to dark
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  applyTheme(newTheme);
-  localStorage.setItem(THEME_KEY, newTheme);
-});
+    applyTheme(newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
+  });
+}
