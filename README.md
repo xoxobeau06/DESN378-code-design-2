@@ -148,6 +148,48 @@ Still everything in regards to applying javascript, im still just going through 
 
 ---
 
+# Learning Log
+​
+## Week 3
+​
+### What I Learned
+This week helped me understand the difference between appearance (what the UI looks like right now) and state (what the system remembers). I learned how design tokens make styles reusable and consistent, and how using semantic tokens instead of hard-coded values makes theme switching much easier. I also learned how system preferences and localStorage work together to create a more thoughtful user experience.
+​
+​
+### What Was Hard
+The hardest part was getting the theme toggle to persist correctly. I ran into issues where the theme would switch visually but not stay on refresh, or it would work correctly until i changed the style of a button and it threw off everything. This helped me realize how sensitive JavaScript logic is to order and naming. Debugging localStorage took time, especially figuring out when the system preference should apply versus when a saved preference should override it.
+​
+​
+### How I Used AI
+I used ChatGPT to help me reason through why my dark mode wasn’t persisting and to sanity-check my logic around localStorage and system preferences. I also used it to clarify design-token structure and confirm whether my CSS setup aligned with best practices. AI helped me troubleshoot and understand concepts, but I still implemented and adjusted everything myself.​
+​
+### What's Still Unclear
+I’m still unsure about how SVGs interact with data-theme, particularly the difference between inline SVGs that can respond to CSS variables and external SVG files that can’t.
+​
+​
+### Work Completed (Week 3)
+
+**Design Tokens**
+- [X] variables.css exists
+- [X] Color tokens defined
+- [X] Typography tokens defined
+- [X] Spacing tokens defined
+- [X] Tokens used in CSS (no hardcoded values)
+
+**Theme System**
+- [X] Uses data-theme on <html>
+- [X] Toggle feedback is immediate
+
+**Persistence & Preference**
+- [X] Theme saved to localStorage
+- [X] Theme persists on refresh
+- [X] System preference used on first visit
+
+**Deployment**
+- [X] Deployed to GitHub Pages
+- [X] Repository is public
+
+
 ## Quick Links
 
 - My Profile (https://github.com/xoxobeau06/DESN378-code-design-2/blob/main/PROFILE.md)
