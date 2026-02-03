@@ -57,4 +57,16 @@ The site supports three theme modes:
 - A `prefers-reduced-motion` media query is implemented to reduce or remove decorative animations while preserving functional motion
 
 ---
+# Theme Dropdown — Anatomy Check
+
+## SVG Anatomy
+
+### What does `viewBox="0 0 24 24"` control?
+The `viewBox` defines the internal coordinate system of the SVG. It allows the icon to scale cleanly to different sizes while maintaining consistent proportions and alignment.
+
+### What does the `d` attribute in a `<path>` describe?
+The `d` attribute contains the drawing commands that define the shape of the path, including how lines and curves are drawn within the SVG.
+
+### Why is `currentColor` more flexible than hard-coded colors?
+Using `currentColor` allows SVG icons to inherit their color from CSS. This makes the icons automatically adapt to light and dark themes, as well as hover and active states, without needing separate SVG files or additional styling.
 
