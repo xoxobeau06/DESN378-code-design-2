@@ -189,6 +189,37 @@ I’m still unsure about how SVGs interact with data-theme, particularly the dif
 - [X] Deployed to GitHub Pages
 - [X] Repository is public
 
+# Learning Log
+​
+## Week 4
+​
+### What I Learned
+This week focused on SVG fundamentals and how icons work both visually and structurally. I learned how SVGs are built from basic shapes like rectangles, circles, and lines, and how those primitives combine to form icons. I also learned about SVG anatomy, including the viewBox, grouping, and how SVGs can be styled with CSS using currentColor and design tokens.
+
+Another big concept was building a theme dropdown with custom SVG icons. I learned how JavaScript, CSS variables, and the data-theme attribute work together to switch between light, dark, and system modes, and how user preferences are saved with localStorage.
+
+### What Was Hard
+Getting the SVG code to work correctly was the most challenging part. Small mistakes in the code would cause the icon to break or not display, and it sometimes took multiple attempts to fix it.
+
+The theme dropdown logic was also confusing at first, especially understanding how the system theme behaves differently from light and dark. It took time to understand how JavaScript, CSS variables, and the data-theme attribute all connect.
+
+### How I Used AI
+I used ChatGPT to help troubleshoot SVG issues and understand why certain parts of the code were not working. I also asked for explanations of the theme switcher logic and how the different pieces interacted.
+
+AI was most helpful when I got stuck, because it helped me spot errors and explained concepts in simpler terms so I could try again.
+
+### What's Still Unclear
+I still feel a little unsure about writing SVG code completely from scratch without looking at references. I understand the structure better now, but I want more practice building icons using only primitives.
+
+I also want to get more comfortable with JavaScript logic, especially when it involves multiple states like light, dark, and system.
+
+### Work Completed (Week 4)
+- [X] Build 4-1 // Symbols — Theme Dropdown with Custom SVG Icons  
+- [X] Engage 4-1 // Learning Log Week-3  
+- [X] Practice 4-1 // SVG Tutorial  
+- [X] Reflect Week 4 — Visual Notes  
+- [X] Build 4-2 // The Mark (Geometry & Primitives)  
+- [X] Practice 4-1 // .svg Anatomy  
 
 ## Quick Links
 
