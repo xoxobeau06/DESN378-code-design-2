@@ -1,3 +1,31 @@
+/* =========================================================
+   styles.css
+   Lost in the Scroll — Scroll.Master System
+
+   TABLE OF CONTENTS
+   01) Base / Layout
+   02) Accessibility (Skip Link)
+   03) Section Rhythm
+   04) Typography Helpers
+   05) Shared Components
+       - Theme Toggle
+       - Button System
+       - Footer
+   06) HERO
+   07) CHAPTER 1 — The First Spell
+   08) CHAPTER 2 — Naming Your Grimoire
+   09) CHAPTER 3 — The Forked Path
+   10) CHAPTER 4 — Channeling Energy
+   11) CHAPTER 5 — The Five Schools
+   12) CHAPTER 6 — The Archive Remembers
+   13) CLOSING — Reset the Field
+   ========================================================= */
+
+
+/* =========================================================
+   01) Base / Layout
+   ========================================================= */
+
 /* Base reset-ish */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -18,12 +46,17 @@ body {
   padding-inline: var(--space-md);
 }
 
-/* Skip link */
+
+/* =========================================================
+   02) Accessibility (Skip Link)
+   ========================================================= */
+
 .skip-link {
   position: absolute;
   left: -999px;
   top: var(--space-md);
 }
+
 .skip-link:focus {
   left: var(--space-md);
   padding: var(--space-sm) var(--space-md);
@@ -32,7 +65,11 @@ body {
   border-radius: var(--radius-md);
 }
 
-/* Section rhythm */
+
+/* =========================================================
+   03) Section Rhythm
+   ========================================================= */
+
 .section {
   min-height: 100svh;
   padding: var(--space-xl) 0;
@@ -49,7 +86,11 @@ body {
   padding-bottom: calc(var(--space-xl) * 1.5);
 }
 
-/* Typography hierarchy */
+
+/* =========================================================
+   04) Typography Helpers
+   ========================================================= */
+
 .eyebrow {
   margin: 0 0 var(--space-sm);
   color: var(--text-muted);
@@ -79,6 +120,14 @@ body {
   color: var(--text-secondary);
 }
 
+.subhead {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-display);
+  font-size: var(--size-subsection);
+  line-height: var(--line-normal);
+}
+
+
 /* Cards */
 .card {
   margin-top: var(--space-lg);
@@ -88,23 +137,20 @@ body {
   border-radius: var(--radius-lg);
 }
 
-.subhead {
-  margin: 0 0 var(--space-sm);
-  font-family: var(--font-display);
-  font-size: var(--size-subsection);
-  line-height: var(--line-normal);
-}
 
 /* Links + focus */
 a {
   color: var(--link);
   transition: color 0.2s ease;
 }
+
 a:hover { color: var(--link-hover); }
+
 a:focus-visible {
   outline: 2px solid var(--focus-ring);
   outline-offset: 3px;
 }
+
 
 /* Mobile readability */
 @media (max-width: 720px) {
@@ -112,6 +158,11 @@ a:focus-visible {
   .headline { font-size: 36px; }
   .section { padding: var(--space-lg) 0; }
 }
+
+
+/* =========================================================
+   05) Shared Components
+   ========================================================= */
 
 /* ======================
    STICKY THEME TOGGLE
@@ -122,18 +173,18 @@ a:focus-visible {
   top: var(--space-lg);
   right: var(--space-lg);
   z-index: 1000;
-  
+
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  
+
   background: var(--surface-elevated);
   border: 2px solid var(--surface-border);
-  
+
   display: grid;
   place-items: center;
   cursor: pointer;
-  
+
   font-size: 24px;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -160,6 +211,7 @@ a:focus-visible {
     font-size: 20px;
   }
 }
+
 
 /* ======================
    BUTTON SYSTEM
@@ -235,6 +287,7 @@ a:focus-visible {
   color: var(--text-inverse);
 }
 
+
 /* ======================
    SITE FOOTER
    ====================== */
@@ -253,9 +306,10 @@ a:focus-visible {
   color: var(--text-muted);
 }
 
-/* ======================
-   HERO CINEMATIC STYLE
-   ====================== */
+
+/* =========================================================
+   06) HERO CINEMATIC STYLE
+   ========================================================= */
 
 .section--hero {
   position: relative;
@@ -346,9 +400,11 @@ a:focus-visible {
       rgba(36, 35, 42, 0.7)
     );
 }
-/* ======================
-   SECTION: THE FIRST SPELL
-   ====================== */
+
+
+/* =========================================================
+   07) CHAPTER 1 — THE FIRST SPELL
+   ========================================================= */
 
 .first-spell {
   display: grid;
@@ -432,9 +488,11 @@ a:focus-visible {
     font-size: clamp(32px, 5vw, var(--size-section));
   }
 }
-/* ======================
-   SECTION: NAMING YOUR GRIMOIRE
-   ====================== */
+
+
+/* =========================================================
+   08) CHAPTER 2 — NAMING YOUR GRIMOIRE
+   ========================================================= */
 
 .grimoire {
   text-align: center;
@@ -500,9 +558,11 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
-/* ======================
-   SECTION: THE FORKED PATH
-   ====================== */
+
+
+/* =========================================================
+   09) CHAPTER 3 — THE FORKED PATH
+   ========================================================= */
 
 .fork {
   text-align: center;
@@ -612,9 +672,71 @@ a:focus-visible {
     padding: var(--space-lg);
   }
 }
-/* ======================
-   SECTION: CHANNELING ENERGY
-   ====================== */
+/* =========================================
+   FORK: match card sizes + selection styles
+   ========================================= */
+
+/* Make the grid stretch items to the same height */
+.fork__grid {
+  align-items: stretch; /* <- important */
+}
+
+/* Make each card a "layout container" that can stretch nicely */
+.fork-card {
+  height: 100%;                 /* equal height in the grid row */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Make the code area consistent so one card doesn't get taller */
+.fork-code {
+  flex: 1;                      /* lets code panel take remaining space */
+  min-height: 260px;            /* tweak if needed to match Figma */
+  display: block;
+}
+
+/* Optional: unify corner rounding + soften border feel (Figma-like) */
+.fork-card {
+  border-width: 2px;
+}
+
+/* ---------- Selected state (base) ---------- */
+.fork-card.is-selected {
+  border-width: 3px;
+}
+
+/* Wizard selected: soft cool tint + subtle border pop */
+.fork-card--wizard.is-selected {
+  background: rgba(74, 144, 226, 0.10); /* soft blue tint */
+  border-color: var(--mana-blue);
+}
+
+/* Sorcerer selected: soft warm tint + border pop */
+.fork-card--sorcerer.is-selected {
+  background: rgba(217, 74, 74, 0.10); /* soft red/pink tint */
+  border-color: var(--mana-red);
+}
+
+/* Optional: selected title emphasis */
+.fork-card.is-selected .fork-card__title {
+  transform: translateY(-1px);
+}
+
+/* Make cards feel clickable */
+.fork-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.fork-card:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   10) CHAPTER 4 — CHANNELING ENERGY
+   ========================================================= */
 
 .energy {
   text-align: center;
@@ -725,14 +847,17 @@ a:focus-visible {
     margin-inline: auto;
   }
 }
-/* ======================
-   SECTION: THE FIVE SCHOOLS
-   ====================== */
+
+
+/* =========================================================
+   11) CHAPTER 5 — THE FIVE SCHOOLS
+   ========================================================= */
 
 .schools {
   text-align: center;
 }
 
+/* Header spacing feels roomy in your screenshot */
 .schools__header {
   max-width: 90ch;
   margin: 0 auto var(--space-xl);
@@ -751,13 +876,8 @@ a:focus-visible {
   color: var(--text-secondary);
 }
 
-.schools__poem p {
-  margin: 0;
-}
-
-.schools__poem p + p {
-  margin-top: 0.35rem;
-}
+.schools__poem p { margin: 0; }
+.schools__poem p + p { margin-top: 0.35rem; }
 
 .schools__body {
   max-width: 95ch;
@@ -765,11 +885,12 @@ a:focus-visible {
   color: var(--text-secondary);
 }
 
-/* Icon row */
+/* Icon row: wider spacing like your screenshot */
 .schools__grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: var(--space-xl);
+  column-gap: clamp(2rem, 4vw, 5rem);
+  row-gap: var(--space-xl);
   align-items: start;
   justify-items: center;
   margin-top: var(--space-xl);
@@ -779,56 +900,90 @@ a:focus-visible {
   margin: 0;
 }
 
+/* Big clean circles (no border) */
 .school__icon {
-  width: 112px;
-  height: 112px;
+  width: 156px;            /* closer to your Figma */
+  height: 156px;
   border-radius: 999px;
   display: grid;
   place-items: center;
-  border: 4px solid rgba(0,0,0,0.08);
-  background: var(--surface-elevated);
+
+  border: none;            /* remove ring */
+  box-shadow: none;        /* screenshot looks flat */
 }
 
+/* IMPORTANT:
+   Make glyph styling work for BOTH:
+   - span icons (temporary)
+   - inline SVG icons (recommended for GSAP)
+*/
 .school__glyph {
-  font-family: var(--font-code);
-  font-size: 40px;
-  color: var(--text-primary);
-  opacity: 0.9;
+  /* If it's an SVG, this will size it */
+  width: 92px;
+  height: 92px;
+
+  /* If it's a span, these still apply */
+  display: block;
+
+  /* Make icon dark like your screenshot */
+  color: rgba(0, 0, 0, 0.85);
+  opacity: 1;
+
+  /* Helpful for GSAP transforms */
+  transform-origin: 50% 50%;
 }
 
+/* If you're still using spans, keep them from looking tiny */
+.school__glyph:not(svg) {
+  font-family: var(--font-code);
+  font-size: 56px;
+  line-height: 1;
+}
+
+/* Inline school icons are fill-based SVG paths */
+.school__glyph svg,
+svg.school__glyph {
+  fill: currentColor;
+  stroke: none;
+}
+
+/* Labels: serif/display feel */
 .school__label {
-  margin-top: var(--space-md);
+  margin-top: 18px;        /* matches screenshot spacing */
   display: grid;
-  gap: 0.25rem;
+  gap: 6px;
 }
 
 .school__name {
-  font-family: var(--font-body);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
   color: var(--text-primary);
 }
 
 .school__token {
-  font-family: var(--font-code);
-  font-size: var(--size-body-sm);
-  color: var(--text-muted);
+  font-family: var(--font-display); /* screenshot feels serif, not code */
+  font-size: 1.2rem;
+  color: var(--text-secondary);
 }
 
-/* Color fills (match your screenshot circles) */
+/* Circle fills (from your tokens) */
 .school--white .school__icon { background: var(--mana-white); }
 .school--green .school__icon { background: var(--mana-green); }
 .school--blue  .school__icon { background: var(--mana-blue); }
 .school--red   .school__icon { background: var(--mana-red); }
 .school--black .school__icon { background: var(--mana-black); }
 
-/* Dark mode: make glyph readable on dark fills */
-[data-theme="dark"] .school__glyph {
-  color: var(--text-inverse);
+/* Black circle: icon should still be dark but readable
+   (your screenshot shows dark-on-dark, not white) */
+.school--black .school__glyph {
+  color: rgba(0, 0, 0, 0.45);
 }
 
 /* Responsive */
 @media (max-width: 1000px) {
   .schools__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-xl);
   }
 }
 
@@ -837,9 +992,11 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 }
-/* ======================
-   SECTION: THE ARCHIVE REMEMBERS (localStorage)
-   ====================== */
+
+
+/* =========================================================
+   12) CHAPTER 6 — THE ARCHIVE REMEMBERS (localStorage)
+   ========================================================= */
 
 .archive {
   text-align: center;
@@ -1012,9 +1169,11 @@ a:focus-visible {
     min-height: auto;
   }
 }
-/* ======================
-   SECTION: CLOSING / RESET THE FIELD
-   ====================== */
+
+
+/* =========================================================
+   13) CLOSING — RESET THE FIELD
+   ========================================================= */
 
 .closing {
   position: relative;
